@@ -1,0 +1,16 @@
+name: Test Runner
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on:
+      - self-hosted
+      - Windows
+      - x64
+    steps:
+      - uses: actions/checkout@v3a
+      - run: echo "Test du Runner sous MS Windows 11"
